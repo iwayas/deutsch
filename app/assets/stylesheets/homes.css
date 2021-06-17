@@ -1,0 +1,14 @@
+.header{
+  background-color: yellow;
+  height: 90px
+}
+
+.main{
+  background-color: skyblue;
+  height: 600px;
+}
+
+.footer{
+  background-color: pink;
+  height: 120px;
+}
