@@ -45,6 +45,9 @@ header {
 
 .main {
   padding: 0 80px;
+}
+
+.copy-container {
   text-align: center;
 }
 
@@ -116,7 +119,7 @@ header {
 }
 
 .contact-form {  
-  padding-top: 100px;
+  padding: 100px 0 80px 80px;
 }
 
 input, textarea {
@@ -134,7 +137,8 @@ input, textarea {
 }
 
 footer {
-  background-color: pink;
+  background-color: #3e3e3e;
+  color: #fff;
   height: 120px;
   padding: 40px;
 }
