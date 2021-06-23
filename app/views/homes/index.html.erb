@@ -10,7 +10,15 @@
     <header>
       <div class="header-logo">Deutsch</div>
       <div class="header-right">
-        <a href="/login" class="login">ログイン</a>
+        <% if session[:user_id] %>
+          <li>
+            ログイン中:
+            <%= session[:user_id] %>
+          </li>
+        <% end %>
+          <a href="" class="login">Deutschとは</a>
+          <a href="signup" class="login">新規登録</a>
+          <a href="/login" class="login">ログイン</a>
       </div>
     </header>
     <div class="main">
