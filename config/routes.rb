@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'home', to: 'homes#index'
+  get 'about', to: 'homes#about'
   get "signup", to: "users#new"
   get "users/:id" => "users#show"
   post "users/create" => "users#create"

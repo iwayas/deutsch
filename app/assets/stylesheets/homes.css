@@ -24,6 +24,7 @@ header {
   float: left;
   font-size: 30px;
   padding: 10px 20px;
+  color: #fff;
 }
 
 .header-right {
@@ -41,6 +42,7 @@ header {
   padding: 0 25px;
   color: white;
   display: block;
+  float: left
 }
 
 .main {
