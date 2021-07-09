@@ -86,3 +86,20 @@ header {
   display: block;
   float: left
 }
+
+.header-right li {
+  line-height: 65px;
+  color: white;
+  display: block;
+  float: left
+}
+
+.user-top:hover {
+  transition: all 0.5s;
+  background-color: rgba(4, 163, 17, 0.5);
+}
+
+.logout-top:hover {
+  transition: all 0.5s;
+  background-color: rgba(4, 163, 17, 0.5);
+}
