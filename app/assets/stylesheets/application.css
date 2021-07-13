@@ -16,6 +16,7 @@
 
 body {
   font-family: "sans-serif";
+  background-color: rgb(241, 240, 232);
 }
 
 li {
@@ -52,7 +53,6 @@ header {
 
 .header-logo a {
   line-height: 55px;
-  padding: 0 25px;
   color: white;
   display: block;
   float: left
