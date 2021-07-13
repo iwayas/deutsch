@@ -13,3 +13,93 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: "sans-serif";
+  background-color: rgb(241, 240, 232);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration:none; 
+}
+
+header {
+  background-color: #63b47a;
+  color: #fff;
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  float: left;
+  font-size: 30px;
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header-logo a {
+  line-height: 55px;
+  color: white;
+  display: block;
+  float: left
+}
+
+.header-right {
+  float: right;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.about-top:hover{
+  transition: all 0.5s;
+  background-color: rgba(4, 163, 17, 0.5);
+}
+
+.signup-top:hover {
+  transition: all 0.5s;
+  background-color: rgba(4, 163, 17, 0.5);
+}
+
+.login-top:hover {
+  transition: all 0.5s;
+  background-color: rgba(4, 163, 17, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left
+}
+
+.header-right li {
+  line-height: 65px;
+  color: white;
+  display: block;
+  float: left
+}
+
+.user-top:hover {
+  transition: all 0.5s;
+  background-color: rgba(4, 163, 17, 0.5);
+}
+
+.logout-top:hover {
+  transition: all 0.5s;
+  background-color: rgba(4, 163, 17, 0.5);
+}

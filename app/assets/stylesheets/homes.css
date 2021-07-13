@@ -1,62 +1,20 @@
-body {
-  font-family: "sans-serif";
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration:none; 
-}
-
-header {
-  background-color: #55c500;
-  color: #fff;
-  height: 65px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.header-logo {
-  float: left;
-  font-size: 30px;
-  padding: 10px 20px;
-}
-
-.header-right {
-  float: right;
-  background-color: rgba(4, 163, 17, 0.3);
-  transition: all 0.5s;
-}
-
-.header-right:hover {
-  background-color: rgba(4, 163, 17, 0.5);
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-}
-
-.main {
-  padding: 0 80px;
-}
-
 .copy-container {
+  background-image: url('schloss.jpeg');
+  background-size: cover;
+  color: white;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .copy-container h1 {
   font-size: 140px;
+  opacity: 0.7;
+  margin-top: 65px;
 }
 
 .copy-container h2 {
   font-size: 60px;
+  opacity: 0.7;
 }
 
 .btn {
@@ -97,34 +55,200 @@ header {
 }
 
 .contents {
-  height: 500px;
-  margin-top: 100px;
+  height: 200px;
+  padding: 10px 40px;
 }
 
 .section-title {
   border-bottom: 2px solid #dee7ec;
   font-size: 28px;
-  padding-bottom: 15px;
-  margin-bottom: 50px;
+  padding: 100px 0 40px;
 }
 
-.contents-item {
+.contents-item-a1 {
   float: left;
-  margin-right: 40px;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #EA5532;
 }
 
-.contents-item p {
-  font-size: 24px;
-  margin-top: 30px;
+.contents-item-a1 p{
+  color: white;
+  font-size: 30px;
+  text-align:center;
+  margin-top: 50px;
+}
+
+.contents-item-a2 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #F6AD3C;
+}
+
+.contents-item-a2 p{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contents-item-b1 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #187FC4;
+}
+
+.contents-item-b1 p{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contents-item-b2 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #00AFEC;
+}
+
+.contents-item-b2 p{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contents-item-c1 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #00A95F;
+}
+
+.contents-item-c1 p{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contents-item-c2 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  background-color: #AACF52;
+}
+
+.contents-item-c2 p{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contents-item-d1 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #F5B090;
+}
+
+.contents-item-d1 p{
+  color: white;
+  font-size: 30px;
+  text-align:center;
+  margin-top: 50px;
+}
+
+.contents-item-d2 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #FCD7A1;
+}
+
+.contents-item-d2 p{
+  color: white;
+  font-size: 30px;
+  text-align:center;
+  margin-top: 50px;
+}
+
+.contents-item-d3 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #A3BCE2;
+}
+
+.contents-item-d3 p{
+  color: white;
+  font-size: 30px;
+  text-align:center;
+  margin-top: 50px;
+}
+
+.contents-item-d4 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #9FD9F6;
+}
+
+.contents-item-d4 p{
+  color: white;
+  font-size: 30px;
+  text-align:center;
+  margin-top: 50px;
+}
+
+.contents-item-d5 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  background-color: #A5D4AD ;
+}
+
+.contents-item-d5 p{
+  color: white;
+  font-size: 30px;
+  text-align:center;
+  margin-top: 50px;
+}
+
+.contents-item-d6 {
+  float: left;
+  height: 150px;
+  width: 150px;
+  background-color: #D7E7AF;
+}
+
+.contents-item-d6 p{
+  color: white;
+  font-size: 30px;
+  text-align:center;
+  margin-top: 50px;
 }
 
 .contact-form {  
-  padding: 100px 0 80px 80px;
+  padding: 100px 80px;
 }
 
 input, textarea {
-  width: 400px;
-  margin-top: 10px;
+  width: 500px;
   margin-bottom: 30px;
   padding: 20px;
   font-size: 18px;
@@ -139,7 +263,7 @@ input, textarea {
 footer {
   background-color: #3e3e3e;
   color: #fff;
-  height: 120px;
+  height: 200px;
   padding: 40px;
 }
 
