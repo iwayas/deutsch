@@ -36,7 +36,7 @@ class UsersController < ApplicationController
     @user.email = params[:email]
     if @user.save
       flash[:notice] = "ユーザー情報を編集しました"
-      redirect_to("/users/#{@user.id}")
+      redirect_to("/users/#{@user.id}/mypage")
     else
       render("users/edit")
     end
@@ -50,7 +50,7 @@ class UsersController < ApplicationController
     if @user
       session[:user_id] = @user.id
       flash[:notice] = "ログインしました"
-      redirect_to("/home")
+      redirect_to("/users/#{@user.id}/mypage")
     else
       @error_message = "メールアドレスまたはパスワードが間違っています"
       @email = params[:email]
