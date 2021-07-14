@@ -15,7 +15,7 @@
         <div class="header-right">
           <% if @current_user %>  
             <li class="user-top">
-              <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+              <%= link_to("#{@current_user.name}さん", "/users/#{@current_user.id}/mypage") %>
             </li>
             <li class="logout-top">
               <%= link_to("ログアウト", "/logout", {method: "post"}) %>
