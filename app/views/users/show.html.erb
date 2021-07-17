@@ -1,10 +1,31 @@
-<div class="main user-show">
-  <div class="container">
-    <div class="user">
+<div class="show-main">
+  <div class="show-sidebar">
+    <div class="show-user">
+      <img src="<%= "/user_images/#{@user.image_name}" %>" value="<%= @user.image_name %>"> 
+    </div>
+    <div class="show-account">
       <h2><%= @user.name %></h2>
-      <p><%= @user.email %></p>
-      <% if @user.id == @current_user.id %>
-      <%= link_to("編集", "/users/#{@user.id}/edit") %>
+      <div class="show-account_edit">
+        <% if @user.id == @current_user.id %>
+          <%= link_to("アカウント編集", "/users/#{@user.id}/edit") %>
+        <% end %>
+      </div>
+    </div>
+    <div class="mypage-menu">
+      <li class="mypage-menu_container">
+        <a href="#"><i class="fas fa-home"></i>トップ</a>
+      </li>
+      <li class="mypage-menu_container">
+        <a href="#"><i class="fas fa-chalkboard-teacher"></i>レッスン</a>
+      <li class="mypage-menu_container">
+        <a href="#"><i class="fas fa-pencil-alt"></i>テスト対策</a>
+      </li>
+      <li class="mypage-menu_container">
+        <a href="#"><i class="fas fa-book"></i>文法まとめ</a>
+      <li class="mypage-menu_container">
+        <a href="#"><i class="fas fa-spell-check"></i>重要単語</a>
+      <li class="mypage-menu_container">
+        <a href="#"><i class="far fa-question-circle"></i>質問</a>
     </div>
   </div>
 </div>
