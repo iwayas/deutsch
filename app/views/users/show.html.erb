@@ -4,7 +4,7 @@
       <img src="<%= "/user_images/#{@user.image_name}" %>" value="<%= @user.image_name %>"> 
     </div>
     <div class="show-account">
-      <h2><%= @user.name %></h2>
+      <h3><%= @user.name %></h3>
       <div class="show-account_edit">
         <% if @user.id == @current_user.id %>
           <%= link_to("アカウント編集", "/users/#{@user.id}/edit") %>
@@ -12,24 +12,115 @@
       </div>
     </div>
     <div class="mypage-menu">
-      <ul class="mypage-menu_container">
-        <a href="#"><i class="fas fa-home"></i>トップ</a>
-      </ul>
-      <ul class="mypage-menu_container">
-        <a href="#"><i class="fas fa-chalkboard-teacher"></i>レッスン</a>
-      </ul>
-      <ul class="mypage-menu_container">
-        <a href="#"><i class="fas fa-pencil-alt"></i>テスト対策</a>
-      </ul>
-      <ul class="mypage-menu_container">
-        <a href="#"><i class="fas fa-book"></i>文法まとめ</a>
-      </ul>
-      <ul class="mypage-menu_container">
-        <a href="#"><i class="fas fa-spell-check"></i>重要単語</a>
-      </ul>
-      <ul class="mypage-menu_container">
-        <a href="#"><i class="far fa-question-circle"></i>質問</a>
-      </ul>
+      <div class="tab-list">
+        <li class="tab tab-active"><i class="fas fa-home"></i>トップ</li>
+        <li class="tab"><i class="fas fa-chalkboard-teacher"></i>レッスン</li>
+        <li class="tab"><i class="fas fa-pencil-alt"></i>テスト対策</li>
+        <li class="tab"><i class="fas fa-book"></i>文法まとめ</li>
+        <li class="tab"><i class="fas fa-spell-check"></i>重要単語</li>
+        <li class="tab"><i class="far fa-question-circle"></i>質問</li>
+      </div>
+    </div>
+    <div class="tabbox-contents">
+      <div class="tabbox_top">
+          <div class="tabbox_top_count">
+            <li>連続アクセス数</li>
+            <li>レッスン受講数</li>
+            <li>テスト対策受講数</li>
+          </div>
+          <div class="tabbox_top_info_today">
+            <li>今日は何の日？</li>
+          </div>
+          <div class="tabbox_top_info_to">
+            <li>受講者様へのお知らせ</li>
+          </div>
+          <div class="tabbox_top_info_from">
+            <li>Deutschからのお知らせ</li>
+          </div>
+        </div>
+      <div class="tabbox box-show">
+        <div class="tabbox_container">
+          <li>トップメイン</li>
+        </div>
+        <div class="triangle_top">
+        </div>
+      </div>
+      <div class="tabbox">
+        <div class="tabbox_container">
+          <li>レッスントップ</li>
+          <li>A1 レベル</li>
+          <li>A2 レベル</li>
+          <li>B1 レベル</li>
+          <li>B2 レベル</li>
+          <li>C1 レベル</li>
+          <li>C2 レベル</li>
+        </div>
+        <div class="triangle_lesson">
+        </div>
+      </div>
+      <div class="tabbox">
+        <div class="tabbox_container">
+          <li>テスト対策トップ</li>
+          <li>Test DaF</li>
+          <li>Telc</li>
+          <li>独検3級</li>
+          <li>独検2級</li>
+          <li>独検1級</li>
+        </div>
+        <div class="triangle_test">
+        </div>
+      </div>
+      <div class="tabbox">
+        <div class="tabbox_container">
+          <li>文法まとめトップ</li>
+          <li>動詞</li>
+          <li>名詞・代名詞</li>
+          <li>形容詞・副詞</li>
+        </div>
+        <div class="triangle_grammer">
+        </div>
+      </div>
+      <div class="tabbox">
+        <div class="tabbox_container">
+          <li>重要単語トップ</li>
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+          <li>D</li>
+          <li>E</li>
+          <li>F</li>
+          <li>G</li>
+          <li>H</li>
+          <li>I</li>
+          <li>J</li>
+          <li>K</li>
+          <li>L</li>
+          <li>M</li>
+          <li>N</li>
+          <li>O</li>
+          <li>P</li>
+          <li>Q</li>
+          <li>R</li>
+          <li>S</li>
+          <li>T</li>
+          <li>U</li>
+          <li>V</li>
+          <li>W</li>
+          <li>X</li>
+          <li>Y</li>
+          <li>Z</li>
+        </div>
+        <div class="triangle_word">
+        </div>
+      </div>
+      <div class="tabbox">
+        <div class="tabbox_container">
+          <li>質問トップ</li>
+          <li>チャットで質問</li>
+        </div>
+        <div class="triangle_question">
+        </div>
+      </div>
     </div>
   </div>
 </div>
