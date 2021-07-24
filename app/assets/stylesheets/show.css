@@ -1,0 +1,235 @@
+.clearfix::after {
+  content: “”;
+  display: block;
+  clear: both;
+}
+
+.show-main {
+  position: absolute;
+  top: 50px;
+  width: 1170px;
+  height: 100vh;
+}
+
+.show-sidebar {
+  width: 240px;
+  height: 100vh;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: grey;
+}
+
+.show-user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px #c1ced7;
+  background-color: #f1f1f1;
+  margin: 15px auto;
+  object-fit: cover;
+}
+
+.upload-img-btn img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  max-width: 120px;
+  text-align: center;
+  display: block;
+  background-color: #f1f1f1;
+  color: black;
+  cursor: pointer;
+}
+
+.show-user {
+  float: left;
+}
+
+.show-account {
+  margin-left: 15px;
+  float: left;
+}
+
+.show-account_edit :hover {
+  color: white;
+}
+
+.show-account a {
+  color: black;
+  font-size: 15px;
+}
+
+.mypage-menu {
+  padding-top: 115px;
+  margin: 15px -15px;
+}
+
+.tab-list {
+  width: 240px;
+  height: 80px;
+  font-size: 20px;
+  color: grey;
+  margin: 0px;
+}
+
+.tab {
+  padding: 25px 15px;
+  width: 240px;
+  height: 80px;
+  font-size: 15px;
+  margin: 0px;
+  background-color:black;
+  border-top: solid 1px grey;
+  list-style: none;
+}
+
+.tab-list a {
+  text-decoration: none;
+}
+
+.tab-list :hover {
+  opacity: 1;
+  color: white;
+  background-color:black;
+  text-decoration: none;
+}
+
+.fas {
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.far {
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.tab-active {
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.tabbox-contents {
+  width: 100%;
+  height: 100vh;
+  color: black;
+  top: 15px;
+  left: 240px;
+  position: absolute;
+}
+
+.tabbox {
+  display: none;
+}
+
+.box-show {
+  display: block;
+}
+
+.tabbox_top li {
+  float: left;
+  margin-right: 10px;
+}
+
+.tabbox_top_count {
+  background-color: pink;
+  width: 1160px;
+  height: 95px;
+  margin: 10px;
+}
+
+.tabbox_container {
+  display: inline-block;
+  padding: 15px;
+  margin-left: 10px;
+  width: 240px;
+  height: 480px;
+  color: black;
+  font-size: 14px;
+  background:white;
+  border: solid 1px black;
+  box-sizing: border-box;
+  top: 115px;
+  float: left;
+}
+
+.tabbox_top_info_today {
+  background-color: red;
+  width: 450px;
+  height: 480px;
+  left: 260px;
+  position: absolute;
+}
+
+.tabbox_top_info_to {
+  background-color: skyblue;
+  width: 450px;
+  height: 235px;
+  left: 720px;
+  position: absolute;
+}
+
+.tabbox_top_info_from {
+  background-color: yellow;
+  width: 450px;
+  height: 235px;
+  top: 360px;
+  left: 720px;
+  position: absolute;
+}
+
+.triangle_top {
+  position: absolute;
+  top: 140px;
+  left: -9px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid rgb(241, 240, 232);
+  border-bottom: 10px solid transparent;
+}
+
+.triangle_lesson {
+  position: absolute;
+  top: 220px;
+  left: -9px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid rgb(241, 240, 232);
+  border-bottom: 10px solid transparent;
+}
+
+.triangle_test {
+  position: absolute;
+  top: 300px;
+  left: -9px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid rgb(241, 240, 232);
+  border-bottom: 10px solid transparent;
+}
+
+.triangle_grammer {
+  position: absolute;
+  top: 380px;
+  left: -9px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid rgb(241, 240, 232);
+  border-bottom: 10px solid transparent;
+}
+
+.triangle_word {
+  position: absolute;
+  top: 460px;
+  left: -9px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid rgb(241, 240, 232);
+  border-bottom: 10px solid transparent;
+}
+
+.triangle_question {
+  position: absolute;
+  top: 540px;
+  left: -9px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid rgb(241, 240, 232);
+  border-bottom: 10px solid transparent;
+}
