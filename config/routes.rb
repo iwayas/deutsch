@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  post "likes/:post_id/create" => "likes#create"
+  post "likes/:post_id/destroy" => "likes#destroy"
+  get 'posts/index', to: 'posts#index'
+  get 'posts/new', to: 'posts#new'
+  get "posts/:id" => "posts#show"
+  post "posts/create" => "posts#create"
   get 'home', to: 'homes#index'
   get 'about', to: 'homes#about'
   get "signup", to: "users#new"
