@@ -1,0 +1,20 @@
+<div class="show-sidebar">
+  <div class="mypage-menu">
+    <%= render partial: 'mypage-posts' %>
+  </div>
+    <%= render partial: 'triangle-posts' %>
+  </div>
+</div>
+
+<div class="posts-index-main">
+  <div class="posts-index-container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <div class="post-user-name">
+          <%= (post.user.name) %>さんの質問
+        </div>
+        <%= link_to(post.content, "/posts/#{post.user_id}") %>
+      </div>
+    <% end %>
+  </div>
+</div>

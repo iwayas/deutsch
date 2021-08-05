@@ -6,7 +6,6 @@
 
 .show-main {
   position: absolute;
-  top: 50px;
   width: 1170px;
   height: 100vh;
 }
@@ -14,9 +13,11 @@
 .show-sidebar {
   width: 240px;
   height: 100vh;
+  margin-top: 65px;
   padding-left: 15px;
   padding-right: 15px;
   background-color: grey;
+  position: absolute;
 }
 
 .show-user img {
@@ -68,30 +69,13 @@
 .tab-list {
   width: 240px;
   height: 80px;
-  font-size: 20px;
+  font-size: 14px;
+  background-color: black;
   color: grey;
   margin: 0px;
 }
 
-.tab {
-  padding: 25px 15px;
-  width: 240px;
-  height: 80px;
-  font-size: 15px;
-  margin: 0px;
-  background-color:black;
-  border-top: solid 1px grey;
-  list-style: none;
-}
-
 .tab-list a {
-  text-decoration: none;
-}
-
-.tab-list :hover {
-  opacity: 1;
-  color: white;
-  background-color:black;
   text-decoration: none;
 }
 
@@ -110,13 +94,43 @@
   transition: all 0.2s ease-in-out;
 }
 
+.tab-check:checked + .tab-label + .tab-content {
+  height: 200px;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
+
+.tab-check {
+  display: none;
+}
+
+.tab-label {
+  width: 240px;
+  height: 80px;
+  font-size: 14px;
+  background: black;
+  display: block;
+  padding: 30px 10px;
+  border: 1px solid #333;
+}
+
+.tab-content {
+  background-color: black;
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+  visibility: hidden;
+}
 
 .tabbox-contents {
   width: 100%;
   height: 100vh;
   color: black;
   top: 15px;
-  left: 240px;
+  margin-left: 240px;
   position: absolute;
 }
 
@@ -182,8 +196,8 @@
 
 .triangle_top {
   position: absolute;
-  top: 140px;
-  left: -9px;
+  top: 160px;
+  margin-left: -25px;
   border-top: 10px solid transparent;
   border-right: 10px solid rgb(241, 240, 232);
   border-bottom: 10px solid transparent;
@@ -191,8 +205,8 @@
 
 .triangle_lesson {
   position: absolute;
-  top: 220px;
-  left: -9px;
+  top: 240px;
+  margin-left: -25px;
   border-top: 10px solid transparent;
   border-right: 10px solid rgb(241, 240, 232);
   border-bottom: 10px solid transparent;
@@ -200,8 +214,8 @@
 
 .triangle_test {
   position: absolute;
-  top: 300px;
-  left: -9px;
+  top: 320px;
+  margin-left: -25px;
   border-top: 10px solid transparent;
   border-right: 10px solid rgb(241, 240, 232);
   border-bottom: 10px solid transparent;
@@ -209,8 +223,8 @@
 
 .triangle_grammer {
   position: absolute;
-  top: 380px;
-  left: -9px;
+  top: 400px;
+  margin-left: -25px;
   border-top: 10px solid transparent;
   border-right: 10px solid rgb(241, 240, 232);
   border-bottom: 10px solid transparent;
@@ -218,8 +232,8 @@
 
 .triangle_word {
   position: absolute;
-  top: 460px;
-  left: -9px;
+  top: 480px;
+  margin-left: -25px;
   border-top: 10px solid transparent;
   border-right: 10px solid rgb(241, 240, 232);
   border-bottom: 10px solid transparent;
@@ -227,9 +241,30 @@
 
 .triangle_question {
   position: absolute;
-  top: 540px;
-  left: -9px;
+  top: 560px;
+  margin-left: -25px;
   border-top: 10px solid transparent;
   border-right: 10px solid rgb(241, 240, 232);
   border-bottom: 10px solid transparent;
+}
+
+.toggle dt{
+  cursor:pointer;
+}
+
+.toggle dt :hover {
+  opacity: 1;
+  color: white;
+  background-color:black;
+  text-decoration: none;
+}
+
+.toggle dd{
+  display: none;
+  height: 200px;
+  color: black;
+}
+
+.toggle dd:hover {
+  color: white;
 }
