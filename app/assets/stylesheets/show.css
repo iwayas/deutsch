@@ -79,6 +79,10 @@
   text-decoration: none;
 }
 
+.tab-list a:hover{
+  color: white;
+}
+
 .fas {
   text-decoration: none;
   padding-right: 10px;
@@ -252,6 +256,10 @@
   cursor:pointer;
 }
 
+.toggle dt a{
+  color: grey;
+}
+
 .toggle dt :hover {
   opacity: 1;
   color: white;
@@ -263,8 +271,19 @@
   display: none;
   height: 200px;
   color: black;
+  margin-left: 30px;
 }
 
-.toggle dd:hover {
+.toggle dd p {
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+
+.label .tag-label:hover{
   color: white;
+}
+
+.link_class {
+
 }
