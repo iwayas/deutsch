@@ -24,7 +24,8 @@ li {
 }
 
 a {
-  text-decoration:none; 
+  text-decoration:none;
+  color: black;
 }
 
 header {
@@ -102,4 +103,37 @@ header {
 .logout-top:hover {
   transition: all 0.5s;
   background-color: rgba(4, 163, 17, 0.5);
+}
+
+/* ページネーション */
+
+.nav-links{
+  padding:2em;
+  display:flex;
+  justify-content:center;
+  background:#f3f3f3;
+}
+.pagenation a,span{
+  width:50px;
+  height:50px;
+  margin:2px;
+  line-height:50px;
+  text-align:center;
+  font-size:14px;
+  text-decoration:none;
+  background:#fff;
+  color:#222;
+  transition:.3s;
+}
+.pagenation a:hover{
+  background:rgba(4, 163, 17, 0.5);
+  border-radius:100%;
+  transform:rotate(360deg);
+}
+.current{
+  background:rgba(4, 163, 17, 0.5);
+  border-radius:100%;
+}
+.dots{
+  background:none;
 }
