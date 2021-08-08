@@ -17,7 +17,7 @@
         <%= @post.content %>
       </p>
       <div class="post-time">
-        <%= @post.created_at %>
+        <%= @post.created_at.strftime(("%Y年%m月%d日 投稿")) %>
       </div>
       <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
         <%= link_to("/likes/#{@post.id}/destroy", {method: "post"}) do %>
@@ -25,7 +25,7 @@
         <% end %>
       <% else %>
         <%= link_to("/likes/#{@post.id}/create", {method: "post"}) do %>
-          <span class="far fa-thumbs-up like-btn"></span>
+          <span class="far fa-thumbs-up like-btn"> 役に立った</span>
         <% end %>
       <% end %>
       <%= @likes_count %>

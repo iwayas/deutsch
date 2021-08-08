@@ -85,7 +85,8 @@
 }
 
 .post-time {
-  color: #8899a6;
+  font-size: 14px;
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -100,7 +101,7 @@
 }
 
 .like-btn {
-  color: #8899a6;
+  color: rgb(45, 123, 240);
 }
 
 .like-btn-unlike {
