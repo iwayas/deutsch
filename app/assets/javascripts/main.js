@@ -21,3 +21,13 @@ window.addEventListener('DOMContentLoaded', function(){
     $('.tabbox').eq(index).addClass('box-show');
   });
 });
+
+window.addEventListener('DOMContentLoaded', function(){
+  $('comment a').click(function(){  
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
+    $('html, body').animate({ 
+      'scrollTop': position 
+    }, 500);
+  });
+});

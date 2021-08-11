@@ -16,4 +16,7 @@ Rails.application.routes.draw do
   post "login" => "users#login"
   post "logout" => "users#logout"
   resources :users, only: :show
+  resources :posts do
+    resources :comments, only: :create
+  end
 end
