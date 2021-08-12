@@ -1,0 +1,70 @@
+<div class="tab-list">
+  <dl class="toggle">
+    <div class="tab tab-active">
+    <input id="tab-check1" class="tab-check" type="checkbox">
+      <dt><label class="tab-label" for="tab-check1"><i class="fas fa-home"></i>トップ</a></label></dt>
+    </div>
+    <div class="tab">
+    <input id="tab-check2" class="tab-check" type="checkbox">
+      <dt><label class="tab-label" for="tab-check2"><i class="fas fa-chalkboard-teacher"></i>レッスン</label></dt>
+      <dd>
+        <p><%= link_to("マイページ", "/users/#{@current_user.id}")%></p>
+        <p><a hreh="#">受講者様へのお知らせ</a></p>
+        <p><a hreh="#">Deutschからのお知らせ</a></p>
+        <p><a hreh="#">受講者様へのお知らせ</a></p>
+      </dd>
+    </div>
+    <div class="tab">
+    <input id="tab-check3" class="tab-check" type="checkbox">
+      <dt><label class="tab-label" for="tab-check3"><i class="fas fa-pencil-alt"></i>テスト対策</label></dt>
+      <dd>
+        <p><a hreh="#">A1レベル</a></p>
+        <p><a hreh="#">A2レベル</a></p>
+        <p><a hreh="#">B1レベル</a></p>
+        <p><a hreh="#">B2レベル</a></p>
+        <p><a hreh="#">C1レベル</a></p>
+        <p><a hreh="#">C2レベル</a></p>
+        <p><a hreh="#">日常会話</a></p>
+        <p><a hreh="#">トラベル</a></p>
+        <p><a hreh="#">ビジネス</a></p>
+      </dd>
+    </div>
+    <div class="tab">
+    <input id="tab-check4" class="tab-check" type="checkbox">
+      <dt><label class="tab-label" for="tab-check4"><i class="fas fa-book"></i>文法まとめ</label></dt>
+      <dd>
+        <p><a hreh="#">Test DaF</a></p>
+        <p><a hreh="#">Telc</a></p>
+        <p><a hreh="#">Goethe</a></p>
+        <p><a hreh="#">ÖSD</a></p>
+        <p><a hreh="#">DSH</a></p>
+        <p><a hreh="#">独検3級</a></p>
+        <p><a hreh="#">独検2級</a></p>
+        <p><a hreh="#">独検1級</a></p>
+      </dd>
+    </div>
+    <div class="tab">
+    <input id="tab-check5" class="tab-check" type="checkbox">
+      <dt><label class="tab-label" for="tab-check5"><i class="fas fa-spell-check"></i>重要単語</label></dt>
+      <dd>
+        <p><a hreh="#">ABC</a></p>
+        <p><a hreh="#">DEF</a></p>
+        <p><a hreh="#">GHI</a></p>
+        <p><a hreh="#">JKL</a></p>
+        <p><a hreh="#">MNO</a></p>
+        <p><a hreh="#">PQR</a></p>
+        <p><a hreh="#">STU</a></p>
+        <p><a hreh="#">VWX</a></p>
+        <p><a hreh="#">YZ</a></p>
+      </dd>
+    </div>
+    <div class="tab">
+    <input id="tab-check6" class="tab-check" type="checkbox">
+      <dt><label class="tab-label" for="tab-check6"><i class="far fa-question-circle"></i>質問</label></dt>
+      <dd>
+        <p><a href="/posts/new">質問する</a></p>
+        <p><a href="/posts/index">質問一覧</a></p>
+      </dd>
+    </div>
+  </dl>
+</div>

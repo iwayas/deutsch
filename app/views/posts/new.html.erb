@@ -1,0 +1,27 @@
+<div class="show-sidebar">
+    <%= render partial: 'posts/account' %>
+  <div class="mypage-menu">
+    <%= render partial: 'mypage-posts' %>
+  </div>
+    <%= render partial: 'triangle-posts' %>
+  </div>
+</div>
+
+<div class="posts-new-main">
+  <div class="posts-new-container">
+    <h1 class="form-heading">質問する</h1>
+    <%= form_tag("/posts/create") do %>
+      <div class="form">
+        <div class="form-body">
+          <% @post.errors.full_messages.each do |message| %>
+            <div class="form-error">
+              <%= message %>
+            </div>
+          <% end %>
+          <textarea name="content", placeholder="140文字以内で入力してください"><%= @post.content %></textarea>
+          <input type="submit" value="送信">
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

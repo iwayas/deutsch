@@ -1,0 +1,9 @@
+<div class="show-user">
+  <img src="<%= "/user_images/#{@current_user.image_name}" %>" value="<%= @current_user.image_name %>"> 
+</div>
+<div class="show-account">
+  <h3><%= @current_user.name %></h3>
+  <div class="show-account_edit">
+    <%= link_to("アカウント編集", "/users/#{@current_user.id}/edit") %>
+  </div>
+</div>
