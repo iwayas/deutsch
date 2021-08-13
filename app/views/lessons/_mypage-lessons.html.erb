@@ -1,8 +1,8 @@
 <div class="tab-list">
   <dl class="toggle">
-    <div class="tab tab-active">
+    <div class="tab">
     <input id="tab-check1" class="tab-check" type="checkbox">
-      <dt><label class="tab-label" for="tab-check1"><i class="fas fa-home"></i>トップ</a></label></dt>
+      <dt><label class="tab-label" for="tab-check1"><i class="fas fa-home"></i>トップ</label></dt>
       <dd>
         <p><%= link_to("マイページ", "/users/#{@current_user.id}")%></p>
         <p><a hreh="#">受講者様へのお知らせ</a></p>
@@ -10,7 +10,7 @@
         <p><a hreh="#">受講者様へのお知らせ</a></p>
       </dd>
     </div>
-    <div class="tab">
+    <div class="tab tab-active">
     <input id="tab-check2" class="tab-check" type="checkbox">
       <dt><label class="tab-label" for="tab-check2"><i class="fas fa-chalkboard-teacher"></i>レッスン</label></dt>
       <dd>
