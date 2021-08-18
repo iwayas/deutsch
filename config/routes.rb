@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   post "login" => "users#login"
   post "logout" => "users#logout"
   get 'lessons' => 'lessons#index'
+  get 'words/abc' => 'words#abc'
   resources :users, only: :show
   resources :posts do
     resources :comments, only: :create
