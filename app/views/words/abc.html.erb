@@ -1,0 +1,80 @@
+<div class="show-sidebar">
+  <div class="show-user">
+    <img src="<%= "/user_images/#{@current_user.image_name}" %>" value="<%= @current_user.image_name %>"> 
+  </div>
+  <div class="show-account">
+    <h3><%= @current_user.name %></h3>
+    <div class="show-account_edit">
+      <%= link_to("アカウント編集", "/users/#{@current_user.id}/edit") %>
+    </div>
+  </div>
+  <div class="mypage-menu">
+    <%= render partial: 'mypage-words' %>
+  </div>
+    <%= render partial: 'triangle-words' %>
+  </div>
+</div>
+
+<div class="words-main">
+  <div style="display:inline-flex; ">
+    <div style="display:inline-block; vertical-align: middle;">
+      <div class="words-button1">
+        <p>ドイツ語</p>
+        <input type="button" id="blockBtn" value="表示">
+        <input type="button" id="nonBtn" value="非表示">
+      </div>
+      <div id="wordBox1">
+        <p>[0001] abbrechen</p>
+        <p>[0002] Abdruck</p>
+        <p>[0003] Abendessen</p>
+        <p>[0004] abends</p>
+        <p>[0005] Abenteuer</p>
+        <p>[0006] abenteuerlich</p>
+        <p>[0007] Abfahrt</p>
+        <p>[0008] Abfall</p>
+        <p>[0009] abfallen</p>
+        <p>[0010] abfinden</p>
+      </div>
+    </div>
+    <div style="display:inline-block; vertical-align: middle;">
+      <div class="words-button2">
+        <p>日本語</p>
+        <input type="button" id="blockBtn2" value="表示">
+        <input type="button" id="nonBtn2" value="非表示">
+      </div>
+      <div id="wordBox2">
+        <p>[0001] 折り取る</p>
+        <p>[0002] 刻印</p>
+        <p>[0003] 夕食</p>
+        <p>[0004] 晩に</p>
+        <p>[0005] 冒険</p>
+        <p>[0006] 冒険的な</p>
+        <p>[0007] 出発</p>
+        <p>[0008] ごみ</p>
+        <p>[0009] 落ちる</p>
+        <p>[0010] 償いをする</p>
+      </div>
+    </div>
+    <div style="display:inline-block; vertical-align: middle;">
+      <div class="words-button3">
+        <p>例文</p>
+        <input type="button" id="blockBtn3" value="表示">
+        <input type="button" id="nonBtn3" value="非表示">
+      </div>
+      <div id="wordBox3">
+        <p>[0001] eine durren Ast abbrechen</p>
+        <p>[0002] -</p>
+        <p>[0003] Was gibt's heute zum Abendessen?</p>
+        <p>[0004] fruh abends</p>
+        <p>[0005] auf Abenteuer</p>
+        <p>[0006] eine abenteuerliche Geschichte</p>
+        <p>[0007] die Abfahrt des Zuges</p>
+        <p>[0008] Abfalle abfahren</p>
+        <p>[0009] Die Blatter fallen vom Baum ab.</p>
+        <p>[0010] den geschadigten mit Geld abfinden</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -63,3 +63,24 @@ window.addEventListener('DOMContentLoaded', function() {
     
   });
 });
+
+window.addEventListener('DOMContentLoaded', function(){
+  $("#blockBtn").click(function() {
+    $("#wordBox1").css("display", "block");
+  });
+  $("#nonBtn").click(function() {
+    $("#wordBox1").css("display", "none");
+  });
+  $("#blockBtn2").click(function() {
+    $("#wordBox2").css("display", "block");
+  });
+  $("#nonBtn2").click(function() {
+    $("#wordBox2").css("display", "none");
+  });
+  $("#blockBtn3").click(function() {
+    $("#wordBox3").css("display", "block");
+  });
+  $("#nonBtn3").click(function() {
+    $("#wordBox3").css("display", "none");
+  });
+});
