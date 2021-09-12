@@ -67,3 +67,7 @@
   top: 3px;
   box-shadow: none;
 }
+
+.form-error {
+  height: 20px;
+}
