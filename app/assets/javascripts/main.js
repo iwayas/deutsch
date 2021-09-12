@@ -22,16 +22,6 @@ window.addEventListener('DOMContentLoaded', function(){
   });
 });
 
-window.addEventListener('DOMContentLoaded', function(){
-  $('comment a').click(function(){  
-    var id = $(this).attr('href');
-    var position = $(id).offset().top;
-    $('html, body').animate({ 
-      'scrollTop': position 
-    }, 500);
-  });
-});
-
 window.addEventListener('DOMContentLoaded', function() {
   function toggleChangeBtn() {
     var slideIndex = $('.slide').index($('.active'));
@@ -82,5 +72,15 @@ window.addEventListener('DOMContentLoaded', function(){
   });
   $("#nonBtn3").click(function() {
     $("#wordBox3").css("display", "none");
+  });
+});
+
+window.addEventListener('DOMContentLoaded', function(){
+  $('.slide-top').slick({
+    accessibility: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    dots: true,
+    fade: true,
   });
 });
