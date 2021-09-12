@@ -7,21 +7,24 @@
   </div>
 </div>
 
-<div class="posts-new-main">
-  <div class="posts-new-container">
-    <h1 class="form-heading">質問する</h1>
-    <%= form_tag("/posts/create") do %>
-      <div class="form">
-        <div class="form-body">
-          <% @post.errors.full_messages.each do |message| %>
-            <div class="form-error">
-              <%= message %>
-            </div>
-          <% end %>
-          <textarea name="content", placeholder="140文字以内で入力してください"><%= @post.content %></textarea>
-          <input type="submit" value="送信">
+<div class="posts-new">
+  <div class="posts-new-main">
+    <h2><i class="far fa-question-circle"></i>質問内容の入力</h2>
+    <div class="posts-new-container">
+      <h3 class="posts-form-heading">※140文字以内で入力してください</h3>
+      <%= form_tag("/posts/create") do %>
+        <div class="posts-new_form">
+          <div class="posts-new_form-body">
+            <% @post.errors.full_messages.each do |message| %>
+              <div class="form-error">
+                <%= message %>
+              </div>
+            <% end %>
+            <textarea name="content", placeholder="こんにちは ! ってドイツ語でなんて言うの？"><%= @post.content %></textarea>
+            <input type="submit" value="この内容で投稿">
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>

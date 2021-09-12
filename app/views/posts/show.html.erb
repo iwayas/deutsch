@@ -7,58 +7,61 @@
   </div>
 </div>
 
-<div class="posts-show-main">
-  <div class="posts-show-container">
-    <div class="posts-show-item">
-      <div class="post-user-name">
-        <%= (@user.name) %>さんの質問
-          <div class="post-time">
-            <%= @post.created_at.strftime(("%Y年%m月%d日 投稿")) %>
+<div class="posts-show">
+  <div class="posts-show-main">
+    <div class="posts-show-container">
+      <div class="posts-show-item">
+        <div class="post-user-name">
+          <%= (@user.name) %>さんの質問
+            <div class="post-time">
+              <%= @post.created_at.strftime(("%Y年%m月%d日 投稿")) %>
+            </div>
+        </div>
+        <p>
+          <%= @post.content %>
+        </p>
+        <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
+          <%= link_to("/likes/#{@post.id}/destroy", {method: "post"}) do %>
+            <span class="far fa-thumbs-up like-btn-unlike"> 役に立った 済</span>
+          <% end %>
+        <% else %>
+          <%= link_to("/likes/#{@post.id}/create", {method: "post"}) do %>
+            <span class="far fa-thumbs-up like-btn"> 役に立った</span>
+          <% end %>
+        <% end %>
+        <%= @likes_count %>
+        <input id="comment-check1" class="comment-check" type="checkbox">
+        <label class="comment-button" for="comment-check1">回答フォーム</label>
+        <div class="comment-content">
+          <div id="response">
+            ※500文字以内で回答してください
+            <% if @current_user %>
+              <%= form_with(model: [@post, @comment], local: true) do |form| %>
+                <%= form.text_area :text, placeholder: "回答フォーム", rows: "2", class: "textbox" %>
+                <%= form.submit "この内容で投稿", class: "form__submit" %>
+              <% end %>
+            <% else %>
+              <strong><p>質問への回答には新規登録/ログインが必要です</p></strong>
+            <% end %>
           </div>
-      </div>
-      <p>
-        <%= @post.content %>
-      </p>
-      <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
-        <%= link_to("/likes/#{@post.id}/destroy", {method: "post"}) do %>
-          <span class="far fa-thumbs-up like-btn-unlike"></span>
-        <% end %>
-      <% else %>
-        <%= link_to("/likes/#{@post.id}/create", {method: "post"}) do %>
-          <span class="far fa-thumbs-up like-btn"> 役に立った</span>
-        <% end %>
-      <% end %>
-      <%= @likes_count %>
-      <div class="comment-buttom">
-        <a href="#response">回答する</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="comment", class="comments-show-container">
-    <div class="comments-show-item">
-      <% if @comments %>
-        <% @comments.each do |comment| %>
-          <div class="comments-user-name">
-            <%= comment.user.name %>さんの回答
-              <div class="comment-time">
-                <%= comment.created_at.strftime(("%Y年%m月%d日 投稿")) %>
-              </div>
-          </div>
-          <p>
-            <%= comment.text %>
-          </p>
+    <div id="comment", class="comments-show-container">
+      <div class="comments-show-item">
+        <% if @comments %>
+          <% @comments.each do |comment| %>
+            <div class="comments-user-name">
+              <%= comment.user.name %>さんの回答
+                <div class="comment-time">
+                  <%= comment.created_at.strftime(("%Y年%m月%d日 投稿")) %>
+                </div>
+            </div>
+            <p>
+              <%= comment.text %>
+            </p>
+          <% end %>
         <% end %>
-      <% end %>
+      </div>
     </div>
-    <div id="response">
-      <% if @current_user %>
-        <%= form_with(model: [@post, @comment], local: true) do |form| %> 
-          <%= form.text_area :text, placeholder: "回答する", rows: "2", class: "textbox" %>
-          <%= form.submit "送信", class: "form__submit" %>
-        <% end %>
-      <% else %>
-        <strong><p>質問への回答には新規登録/ログインが必要です</p></strong>
-      <% end %>
-    </div>
-  </div>
-</div>
+  </div>  
