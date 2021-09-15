@@ -1,0 +1,41 @@
+<div class="show-sidebar">
+  <div class="show-user">
+    <img src="<%= "/user_images/#{@current_user.image_name}" %>" value="<%= @current_user.image_name %>"> 
+  </div>
+  <div class="show-account">
+    <h3><%= @current_user.name %></h3>
+    <div class="show-account_edit">
+      <%= link_to("アカウント編集", "/users/#{@current_user.id}/edit") %>
+    </div>
+  </div>
+  <div class="mypage-menu">
+    <%= render partial: 'mypage-words' %>
+  </div>
+    <%= render partial: 'triangle-words' %>
+  </div>
+</div>
+
+<div class="words-main">
+  <div class="word-container">
+    <h2><a class=word-red>ab</a></h2>
+    <p>[ap <a style= "font-weight: bold">ア</a>ップ]<audio controls src="#"></audio></p>
+    <p><a class=word-speech>副</a> (..から)<a class=word-red>離れて</a></p>
+    <p>(時刻表で)<a class=word-red>...発</a></p>
+    <p><a class=word-speech>前</a> (時間・空間)<a class=word-red>...から</a></p>
+    <p>・分離前つづりかどうかに注意</p>
+    <p><a class=word-speech>副</a></p>
+    <p><a class=word-number>１</a> (..から)<a class=word-red>離れて</a>(英<a style= "font-family: cursive">off</a>)</p>
+    <p>▶︎ <a class=word-blue>vier Kilometer ab</a></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;4キロ離れて</p>
+    <p><a class=word-number>２</a> (時刻表で)<a class=word-red>...発</a>(⇔an)</p>
+    <p>▶︎ <a class=word-blue>Ausburg ab 8.32 Uhr, München an 9.05</a> </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;アウスブルク発8時32分,ミュンヘン着9時5分</p>
+    <p><a class=word-number>３</a> ((演劇)) 退場</p>
+    <p>◆ ab sein((口語))</p>
+    <p><a class=word-number>１</a> (ボタンなどが)取れている,(ペンキなどが)はがれている</p>
+    <p>▶︎ <a class=word-blue>Der Henkel ist ab.</a></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;取手が取れている</p>
+    <p><a class=word-number>２</a> 疲れている,ぐったりしている</p>
+    <p><a class=word-number>３</a> (家などが)離れている</p>
+  </div>
+</div>
