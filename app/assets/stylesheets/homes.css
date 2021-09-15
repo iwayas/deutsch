@@ -861,7 +861,9 @@ input, textarea {
 }
 
 .about-main {
-  background: #fff;
+  background: -moz-linear-gradient(top, #78ff95, #FFF);
+  background: -webkit-linear-gradient(top, #78ff95, #FFF);
+  background: linear-gradient(to bottom, #78ff95, #FFF);
   border-radius: 6px;
   padding: 20px 60px;
   width: 500px;
