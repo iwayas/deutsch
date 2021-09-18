@@ -213,6 +213,10 @@
   color: orangered;
 }
 
+.posts-form-error {
+  height: 40px;
+}
+
 /* ==comment== */
 .comments-show-container {
   margin-top: 20px;

@@ -5,7 +5,7 @@
   <div class="form-body">
     <%= form_tag("/login") do %>
       <input name="email" placeholder="メールアドレス" value="<%= @email %>">
-      <input type="password" name="password" placeholder="パスワード" value="<%= @password %>">
+      <input type="password" name="password" placeholder="パスワード (半角英数字を含む8-12文字)" value="<%= @password %>">
       <button class="login-btn">ログイン</button>
     <% end %>
   </div>

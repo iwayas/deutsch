@@ -1,6 +1,3 @@
-.copy-container {
-}
-
 .slide-top {
   background-size: cover;
   color: white;
@@ -810,14 +807,6 @@
 .contact-submit:active {
   top: 3px;
   box-shadow: none;
-}
-
-input, textarea {
-  /* width: 500px;
-  margin-bottom: 20px;
-  padding: 20px;
-  font-size: 18px;
-  border: 2px solid #dee7ec; */
 }
 
 .footer-content {

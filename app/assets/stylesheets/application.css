@@ -123,12 +123,10 @@ header {
 }
 .pagenation a,span{
   margin:2px;
-  /* line-height:50px; */
   text-align:center;
   font-size:14px;
   text-decoration:none;
-  /* background:#fff; */
-  color:#fff;
+  color:#333;
   transition:.3s;
 }
 .pagenation a:hover{
@@ -137,7 +135,7 @@ header {
   transform:rotate(360deg);
 }
 .current{
-  background: black;
+  background: rgba(4, 163, 17, 0.5);
   border-radius:100%;
 }
 .dots{

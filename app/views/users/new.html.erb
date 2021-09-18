@@ -6,7 +6,7 @@
         <%= form_tag("/users/create") do %>
           <input name="name" placeholder="ユーザー名" value="<%= @user.name %>">
           <input name="email" placeholder="メールアドレス" value="<%= @user.email %>">
-          <input type="password" name="password" placeholder="パスワード" value="<%= @user.password %>">
+          <input type="password" name="password" placeholder="パスワード (半角英数字を含む8-12文字)" value="<%= @user.password %>">
           <button class="login-btn">新規登録</button>
         <% end %>
         <% @user.errors.full_messages.each do |message| %>

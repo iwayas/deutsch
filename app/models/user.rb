@@ -8,7 +8,7 @@ class User < ApplicationRecord
   VALID_PASSWORD_REGEX =/\A(?=.*?[a-z])(?=.*?\d)[a-z\d]{8,12}+\z/i
     validates :password, {presence: true}
     validates :password, format: { with: VALID_PASSWORD_REGEX,
-      message: "は半角英数字を含む8~12文字"}
+      message: "は半角英数字を含む8-12文字"}
   has_many :comments
 
   def posts
