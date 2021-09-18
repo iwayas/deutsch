@@ -40,7 +40,6 @@ class UsersController < ApplicationController
     @user.name = params[:name]
     @user.email = params[:email]
     @user.password = params[:password]
-    # @user.image_name = "#{@user.id}.jpg"
 
     if params[:image]
       @user.image_name = "#{@user.id}.jpg"
