@@ -3,59 +3,77 @@
     <div class="tab tab-active">
     <input id="tab-check1" class="tab-check" type="checkbox">
       <dt><label class="tab-label" for="tab-check1"><i class="fas fa-home"></i>トップ</a></label></dt>
+      <dd>
+        <p><%= link_to("マイページ", "/users/#{@current_user.id}")%></p>
+        <p><a href="#">受講者様へのお知らせ(準備中)</a></p>
+        <p><a href="#">Deutschからお知らせ(準備中)</a></p>
+      </dd>
     </div>
     <div class="tab">
     <input id="tab-check2" class="tab-check" type="checkbox">
       <dt><label class="tab-label" for="tab-check2"><i class="fas fa-chalkboard-teacher"></i>レッスン</label></dt>
       <dd>
-        <p><%= link_to("マイページ", "/users/#{@current_user.id}")%></p>
-        <p><a hreh="#">受講者様へのお知らせ</a></p>
-        <p><a hreh="#">Deutschからのお知らせ</a></p>
-        <p><a hreh="#">受講者様へのお知らせ</a></p>
+        <p><a href="/lessons">日常会話</a></p>
+        <p><a href="#">トラベル(準備中)</a></p>
+        <p><a href="#">ビジネス(準備中)</a></p>
+        <p><a href="#">A1レベル(準備中)</a></p>
+        <p><a href="#">A2レベル(準備中)</a></p>
+        <p><a href="#">B1レベル(準備中)</a></p>
+        <p><a href="#">B2レベル(準備中)</a></p>
+        <p><a href="#">C1レベル(準備中)</a></p>
+        <p><a href="#">C2レベル(準備中)</a></p>
       </dd>
     </div>
     <div class="tab">
     <input id="tab-check3" class="tab-check" type="checkbox">
       <dt><label class="tab-label" for="tab-check3"><i class="fas fa-pencil-alt"></i>テスト対策</label></dt>
       <dd>
-        <p><a hreh="#">A1レベル</a></p>
-        <p><a hreh="#">A2レベル</a></p>
-        <p><a hreh="#">B1レベル</a></p>
-        <p><a hreh="#">B2レベル</a></p>
-        <p><a hreh="#">C1レベル</a></p>
-        <p><a hreh="#">C2レベル</a></p>
-        <p><a hreh="#">日常会話</a></p>
-        <p><a hreh="#">トラベル</a></p>
-        <p><a hreh="#">ビジネス</a></p>
+        <p><a href="#">Test DaF(準備中)</a></p>
+        <p><a href="#">Telc(準備中)</a></p>
+        <p><a href="#">Goethe(準備中)</a></p>
+        <p><a href="#">ÖSD(準備中)</a></p>
+        <p><a href="#">DSH(準備中)</a></p>
+        <p><a href="#">独検3級(準備中)</a></p>
+        <p><a href="#">独検2級(準備中)</a></p>
+        <p><a href="#">独検1級(準備中)</a></p>
       </dd>
     </div>
     <div class="tab">
     <input id="tab-check4" class="tab-check" type="checkbox">
       <dt><label class="tab-label" for="tab-check4"><i class="fas fa-book"></i>文法まとめ</label></dt>
       <dd>
-        <p><a hreh="#">Test DaF</a></p>
-        <p><a hreh="#">Telc</a></p>
-        <p><a hreh="#">Goethe</a></p>
-        <p><a hreh="#">ÖSD</a></p>
-        <p><a hreh="#">DSH</a></p>
-        <p><a hreh="#">独検3級</a></p>
-        <p><a hreh="#">独検2級</a></p>
-        <p><a hreh="#">独検1級</a></p>
+        <p><a href="#">時制と語順(準備中)</a></p>
+        <p><a href="#">主文の組み立て(準備中)</a></p>
+        <p><a href="#">副文の組み立てと種類(準備中)</a></p>
+        <p><a href="#">話法の助動詞(準備中)</a></p>
+        <p><a href="#">受動態(準備中)</a></p>
+        <p><a href="#">zu 不定詞(準備中)</a></p>
+        <p><a href="#">接続法(準備中)</a></p>
+        <p><a href="#">名詞の格変化(準備中)</a></p>
+        <p><a href="#">冠詞の分類と格変化(準備中)</a></p>
+        <p><a href="#">代名詞と格変化(準備中)</a></p>
+        <p><a href="#">関係代名詞(準備中)</a></p>
+        <p><a href="#">es を使った構文(準備中)</a></p>
+        <p><a href="#">3つの用法(準備中)</a></p>
+        <p><a href="#">形容詞の格変化(準備中)</a></p>
+        <p><a href="#">比較のしかた(準備中)</a></p>
+        <p><a href="#">形容詞の名詞化(準備中)</a></p>
+        <p><a href="#">分詞を使った表現(準備中)</a></p>
       </dd>
     </div>
     <div class="tab">
     <input id="tab-check5" class="tab-check" type="checkbox">
       <dt><label class="tab-label" for="tab-check5"><i class="fas fa-spell-check"></i>重要単語</label></dt>
       <dd>
-        <p><a hreh="#">ABC</a></p>
-        <p><a hreh="#">DEF</a></p>
-        <p><a hreh="#">GHI</a></p>
-        <p><a hreh="#">JKL</a></p>
-        <p><a hreh="#">MNO</a></p>
-        <p><a hreh="#">PQR</a></p>
-        <p><a hreh="#">STU</a></p>
-        <p><a hreh="#">VWX</a></p>
-        <p><a hreh="#">YZ</a></p>
+        <p><a href="/words/abc">ABC</a></p>
+        <p><a href="#">DEF(準備中)</a></p>
+        <p><a href="#">GHI(準備中)</a></p>
+        <p><a href="#">JKL(準備中)</a></p>
+        <p><a href="#">MNO(準備中)</a></p>
+        <p><a href="#">PQR(準備中)</a></p>
+        <p><a href="#">STU(準備中)</a></p>
+        <p><a href="#">VWX(準備中)</a></p>
+        <p><a href="#">YZ(準備中)</a></p>
       </dd>
     </div>
     <div class="tab">

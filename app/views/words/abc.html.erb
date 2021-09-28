@@ -1,0 +1,95 @@
+<div class="show-sidebar">
+  <div class="show-user">
+    <img src="<%= "/user_images/#{@current_user.image_name}" %>" value="<%= @current_user.image_name %>"> 
+  </div>
+  <div class="show-account">
+    <h3><%= @current_user.name %></h3>
+    <div class="show-account_edit">
+      <%= link_to("アカウント編集", "/users/#{@current_user.id}/edit") %>
+    </div>
+  </div>
+  <div class="mypage-menu">
+    <%= render partial: 'mypage-words' %>
+  </div>
+    <%= render partial: 'triangle-words' %>
+  </div>
+</div>
+
+<div class="words-main">
+  <div style="display:inline-flex; margin-left: 80px;">
+    <div style="display:inline-block; vertical-align: middle;">
+      <div class="words-button1">
+        <p>ドイツ語</p>
+        <input type="button" id="blockBtn" value="表示">
+        <input type="button" id="nonBtn" value="非表示">
+      </div>
+      <div id="wordBox1">
+        <p>[0001] <a href=abc/ab>ab</a>&nbsp;&nbsp;←クリックで詳細表示</p>
+        <p>[0002] ab..</p>
+        <p>[0003] r Abend</p>
+        <p>[0004] aber</p>
+        <p>[0005] abfahren</p>
+        <p>[0006] s Bad</p>
+        <p>[0007] baden</p>
+        <p>[0008] r Bahnhof</p>
+        <p>[0009] bald</p>
+        <p>[0010] r Ball</p>
+        <p>[0011] s Café</p>
+        <p>[0012] e Chance</p>
+        <p>[0013] r Cent</p>
+        <p>[0014] s Chaos</p>
+        <p>[0015] chaotisch</p>
+      </div>
+    </div>
+    <div style="display:inline-block; vertical-align: middle;">
+      <div class="words-button2">
+        <p>日本語</p>
+        <input type="button" id="blockBtn2" value="表示">
+        <input type="button" id="nonBtn2" value="非表示">
+      </div>
+      <div id="wordBox2">
+        <p>[0001] 離れて ...発 ...から</p>
+        <p>[0002] (出発) (分離・除去) (遮断) (取消) (模写)</p>
+        <p>[0003] 晩 夕べの催し</p>
+        <p>[0004] しかし</p>
+        <p>[0005] （乗り物で）出発する</p>
+        <p>[0006] 入浴 水浴び 浴室</p>
+        <p>[0007] 入浴する 泳ぐ</p>
+        <p>[0008] 駅</p>
+        <p>[0009] まもなく じきに</p>
+        <p>[0010] ボール 舞踏会</p>        
+        <p>[0011] 喫茶店</p>
+        <p>[0012] チャンス</p>
+        <p>[0013] セント</p>
+        <p>[0014] 混乱</p>
+        <p>[0015] 混乱した</p>
+      </div>
+    </div>
+    <div style="display:inline-block; vertical-align: middle;">
+      <div class="words-button3">
+        <p>例文</p>
+        <input type="button" id="blockBtn3" value="表示">
+        <input type="button" id="nonBtn3" value="非表示">
+      </div>
+      <div id="wordBox3">
+        <p>[0001] vier Kilometer ab</p>
+        <p>[0002] ab|reisen</p>
+        <p>[0003] gestern Abend</p>
+        <p>[0004] Die Tasche war klein, aber schwer.</p>
+        <p>[0005] nach Berlin abfahren</p>
+        <p>[0006] ein Bad nehmen</p>
+        <p>[0007] Sie badet jeden Morgen in kaltem Wasser.</p>
+        <p>[0008] Ich holte meine Mutter vom Bahnhof ab.</p>
+        <p>[0009] Er besucht uns bald.</p>
+        <p>[0010] den Ball werfen</p>
+        <p>[0011] ins Café gehen</p>
+        <p>[0012] eine gute Chance</p>
+        <p>[0013] 100 Cent sind ein Euro.</p>
+        <p>[0014] Nach dem Sturm herrschte in der Stadt das reinste Chaos.</p>
+        <p>[0015] chaotische Zeiten</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -7,8 +7,17 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/commmon.css"/>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   </head>
-      <header>
+    <header>
       <div class="container">
         <div class="header-logo">
           <a href="/home">Deutsch</a>
@@ -16,7 +25,7 @@
         <div class="header-right">
           <% if @current_user %>  
             <li class="user-top">
-              <%= link_to("#{@current_user.name}さん", "/users/#{@current_user.id}") %>
+              <%= link_to("マイページ", "/users/#{@current_user.id}") %>
             </li>
             <li class="logout-top">
               <%= link_to("ログアウト", "/logout", {method: "post"}) %>
@@ -32,4 +41,7 @@
   <body>
     <%= yield %>
   </body>
+  <footer>
+    <p>Copyright © 2021 Deutsch All Rights Reserved.</p>
+  </footer>
 </html>

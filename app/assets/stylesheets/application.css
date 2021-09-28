@@ -17,6 +17,7 @@
 body {
   font-family: "sans-serif";
   background-color: rgb(241, 240, 232);
+  height: 100vh;
 }
 
 li {
@@ -29,8 +30,8 @@ a {
 }
 
 header {
-  background-color: #63b47a;
-  color: #fff;
+  background-color: rgb(241, 240, 232);
+  color: black;
   height: 65px;
   width: 100%;
   position: fixed;
@@ -45,64 +46,71 @@ header {
 }
 
 .header-logo {
-  float: left;
-  font-size: 30px;
-  padding: 5px;
-  color: #fff;
+  /* float: left; */
+  font-size: 40px;
+  /* padding: 5px; */
+  color: black;
   font-weight: bold;
+  font-family: 'Vollkorn', serif;
+  /* position: relative; */
 }
 
 .header-logo a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
   line-height: 55px;
-  color: white;
+  color: #333;
   display: block;
-  float: left
+  text-align: center;
 }
 
 .header-right {
   float: right;
-  margin-right: 20px;
-  font-size: 20px;
+  margin-right: 0px;
+  font-size: 16px;
 }
 
 .about-top:hover{
   transition: all 0.5s;
-  background-color: rgba(4, 163, 17, 0.5);
+  background-color: rgb(221, 220, 212);
 }
 
 .signup-top:hover {
   transition: all 0.5s;
-  background-color: rgba(4, 163, 17, 0.5);
+  background-color: rgb(221, 220, 212);
 }
 
 .login-top:hover {
   transition: all 0.5s;
-  background-color: rgba(4, 163, 17, 0.5);
+  background-color: rgb(221, 220, 212);
 }
 
 .header-right a {
   line-height: 65px;
-  padding: 0 25px;
-  color: white;
+  padding: 0 20px;
+  color: #333;
   display: block;
   float: left
 }
 
 .header-right li {
   line-height: 65px;
-  color: white;
+  color: rgb(221, 220, 212);
   display: block;
   float: left
 }
 
 .user-top:hover {
   transition: all 0.5s;
-  background-color: rgba(4, 163, 17, 0.5);
+  background-color: rgb(221, 220, 212);
 }
 
 .logout-top:hover {
   transition: all 0.5s;
-  background-color: rgba(4, 163, 17, 0.5);
+  background-color: rgb(221, 220, 212);
 }
 
 /* ページネーション */
@@ -115,12 +123,10 @@ header {
 }
 .pagenation a,span{
   margin:2px;
-  line-height:50px;
   text-align:center;
   font-size:14px;
   text-decoration:none;
-  background:#fff;
-  color:#222;
+  color:#333;
   transition:.3s;
 }
 .pagenation a:hover{
@@ -129,9 +135,72 @@ header {
   transform:rotate(360deg);
 }
 .current{
-  background:rgba(4, 163, 17, 0.5);
+  background: rgba(4, 163, 17, 0.5);
   border-radius:100%;
 }
 .dots{
   background:none;
+}
+
+footer p{
+  width: 100%;
+  color: #ccc;
+  background-color: #333;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  margin-left: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+blockquote {
+  width: 580px;
+  position: relative;
+  padding: 35px 15px 10px 15px;
+  box-sizing: border-box;
+  font-style: italic;
+  background: #f5f5f5;
+  color: #777777;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+  margin-left: 0;
+}
+
+blockquote:before{
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  color: #cfcfcf;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+blockquote p {
+  width: 560px;
+  padding: 0;
+  margin: 7px 0;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+blockquote a {
+  color: #333;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
 }

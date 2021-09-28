@@ -1,11 +1,17 @@
 /* posts/index ================================ */
+.posts-index {
+  width: 100%;
+  height: 1045px;
+  left: 240px;
+  top: 65px;
+  background-color: #FFF;
+}
+
 .posts-index-main {
   width: 600px;
-  padding-left: 15px;
-  padding-right: 15px;
   clear: both;
   position: absolute;
-  top: 150px;
+  top: 135px;
   left: 500px;
 }
 
@@ -45,20 +51,31 @@
 }
 
 /* posts/show ================================ */
-
+.posts-show {
+  width: 100%;
+  height: 1050px;
+  padding: 20px;
+  clear: both;
+  top: 65px;
+  left: 240px;
+  background-color: #FFF;
+  overflow: scroll;
+  margin-right: 300px;
+}
 
 .posts-show-main {
+  width: 500px;
+  margin-left: 500px;
+}
+
+.posts-show-container {
   width: 600px;
-  padding-left: 15px;
-  padding-right: 15px;
-  clear: both;
-  position: absolute;
-  top: 150px;
-  left: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .posts-show-item {
-  padding: 20px 30px;
+  padding: 20px;
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
@@ -106,7 +123,7 @@
 }
 
 .like-btn-unlike {
-  color: #ff2581;
+  color: red;
 }
 
 .posts-show-item .fa {
@@ -114,23 +131,73 @@
   margin-right: 3px;
 }
 
-/* posts/new ================================ */
+.form__submit {
+  background-color: #63b47a;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 40px;
+  -webkit-transition: none;
+  transition: none;
+  box-shadow: 0 3px 0 #458d59;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  border: 0px;
+  position: relative;
+  width: 110px;
+}
 
+.form__submit:hover {
+  background-color: #46995e;
+  box-shadow: 0 3px 0 #317043;
+}
+
+.form__submit:active {
+  top: 3px;
+  box-shadow: none;
+}
+
+/* posts/new ================================ */
 .posts-new-main {
-  max-width: 600px;
-  padding-left: 15px;
+  padding-top: 95px;
+  height: 1050px;
+  padding-left: 250px;
   padding-right: 15px;
   clear: both;
-  position: absolute;
-  top: 150px;
-  left: 500px;
+  top: 65px;
+  margin-left: 240px;
+  background-color: #FFF;
+}
+
+.posts-new-container {
+  background-color: white;
+}
+
+.posts-new_form-body {
+  line-height: 50px;
+  width: 500px;
+}
+
+.posts-new_form-body input {
+  width: 300px;
+  height: 70px;
+  background: #f5f5f5;
+  border: 0;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #eee;
+}
+
+.posts-new_form-body :hover{
+  background-color: #fff;
+  box-shadow: 0 3px 0 rgba(0,0,0,.1);
 }
 
 .posts-new-main textarea {
+  width: 500px;
   font-size: 20px;
   padding: 10px;
   min-height: 140px;
-  border: 1px solid rgb(216, 218, 223);
+  border: 2px solid rgb(216, 218, 223);
   resize: none;
 }
 
@@ -139,17 +206,25 @@
   opacity: 0.5;
 }
 
-.form-heading {
-  color: grey;
+.posts-form-heading {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: orangered;
+}
+
+.posts-form-error {
+  height: 40px;
 }
 
 /* ==comment== */
 .comments-show-container {
   margin-top: 20px;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .comments-show-item {
-  /* padding: 20px 30px; */
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
@@ -201,11 +276,11 @@
 }
 
 .comments-show-container textarea {
-  margin-top: 40px;
   width: 570px;
 }
 
-.comment-buttom {
+.comment-button {
+  width: 110px;
   float: right;
   position: relative;
   background-color: #63b47a;
@@ -216,19 +291,56 @@
   transition: none;
   box-shadow: 0 3px 0 #458d59;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  text-align: center;
 }
 
-.comment-buttom a {
+.comment-button a {
   color: white;
   margin: 10px;
 }
 
-.comment-buttom:hover {
+.comment-button:hover {
   background-color: #46995e;
   box-shadow: 0 3px 0 #317043;
 }
 
-.comment-buttom:active {
-  top: 3px;
-  box-shadow: none;
+.comment-button:active {
+    top: 3px;
+    box-shadow: none;
+}
+
+.comment-button-check {
+  display: none;
+}
+
+#response {
+  font-size: 14px;
+  color: orangered;
+}
+
+.comment-check{
+  display: none;
+}
+
+.comment-content{
+  border: solid 3px #63b47a;
+  border-radius: 10px;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+  visibility: hidden;
+}
+.comment-check:checked + .comment-button + .comment-content{
+  height: 220px;
+  opacity: 1;
+  padding: 10px;
+  margin-top: 50px;
+  visibility: visible;
+}
+
+textarea#comment_text.textbox {
+  width: 515px;
+  height: 100px;
+  margin: 10px 0;
 }

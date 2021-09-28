@@ -7,16 +7,19 @@
   </div>
 </div>
 
-<div class="posts-index-main">
-  <div class="posts-index-container">
-    <% @posts.each do |post| %>
-      <div class="posts-index-item">
-        <div class="post-user-name">
-          <%= (post.user.name) %>さんの質問
+<div class="posts-index">
+  <div class="posts-index-main">
+    <h2><i class="far fa-question-circle"></i>質問一覧</h2>
+    <div class="posts-index-container">
+      <% @posts.each do |post| %>
+        <div class="posts-index-item">
+          <div class="post-index-user-name">
+            <%= (post.user.name) %>さんの質問
+          </div>
+          <%= link_to(post.content, "/posts/#{post.id}") %>
         </div>
-        <%= link_to(post.content, "/posts/#{post.id}") %>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
+    <%= paginate @posts %>
   </div>
-  <%= paginate @posts %>
 </div>
