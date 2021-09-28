@@ -84,3 +84,22 @@ window.addEventListener('DOMContentLoaded', function(){
     fade: true,
   });
 });
+
+window.addEventListener('DOMContentLoaded', function(){
+  $("#keyword").on("input", searchEvent);
+  function searchEvent() {
+    const results = [];
+    const inputText = $(this).val();
+    if (inputText) {
+      $("#wordBox1 p").each((index, name) => {
+        if (name.textContent.indexOf(inputText) !== -1) {
+          results.push(name.textContent);
+        }
+      });
+      $("#result").empty();
+      $.each(results, (index, name) => {
+        $("#result").append("<li>" + name + "</li>");
+      });
+    }
+  }
+});
