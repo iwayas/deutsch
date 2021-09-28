@@ -93,6 +93,31 @@
   font-size: 12px;
 }
 
+#words-serch {
+  height: 75px;
+  width: 300px;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: 80px;
+  position: relative;
+}
+
+#words-serch p{
+  margin: 0;
+}
+
+#result {
+  width: 300px;
+  height: 75px;
+  font-size: 12px;
+  margin: 0;
+  top: 85px;
+  left: 340px;
+  position: absolute;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
 .word-container {
   height: 950px;
   width: 800px;
