@@ -1,4 +1,4 @@
-lock "~> 3.14.1"
+lock "3.14.1"
 set :application, 'deutsch'
 set :repo_url, "git@github.com:shoty-de/deutsch.git"
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
