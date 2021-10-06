@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: deutsch_production
-  username: deutsch
+  username: root
   password: <%= ENV['DEUTSCH_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
