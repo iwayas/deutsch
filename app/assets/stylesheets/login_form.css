@@ -1,7 +1,7 @@
 .main {
-  background: -moz-linear-gradient(top, #78ff95, #FFF);
-  background: -webkit-linear-gradient(top, #78ff95, #FFF);
-  background: linear-gradient(to bottom, #78ff95, #FFF);
+  background: -moz-linear-gradient(top, #00e3ae, #9be15d);
+  background: -webkit-linear-gradient(top, #00e3ae, #9be15d);
+  background: linear-gradient(to bottom, #00e3ae, #9be15d);
   border-radius: 6px;
   padding: 20px 100px;
   width: 500px;
@@ -15,9 +15,9 @@
 }
 
 .edit-main {
-  background: -moz-linear-gradient(top, #78ff95, #FFF);
-  background: -webkit-linear-gradient(top, #78ff95, #FFF);
-  background: linear-gradient(to bottom, #78ff95, #FFF);
+  background: -moz-linear-gradient(top, #00e3ae, #9be15d);
+  background: -webkit-linear-gradient(top, #00e3ae, #9be15d);
+  background: linear-gradient(to bottom, #00e3ae, #9be15d);
   border-radius: 6px;
   padding: 20px 100px;
   width: 500px;
