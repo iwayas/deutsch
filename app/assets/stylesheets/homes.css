@@ -22,7 +22,7 @@
 .container_top h1 {
   font-size: 120px;
   opacity: 0.7;
-  margin-top: 600px;
+  margin-top: 500px;
 }
 
 .container_top h2 {
@@ -44,7 +44,7 @@
 }
 
 .btn {
-  padding: 8px 24px;
+  padding: 16px 48px;
   color: white;
   display: inline-block;
   opacity: 0.8;
@@ -59,17 +59,14 @@
   background-color: #239b76;
 }
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.google {
-  background-color: #DD5144
+.signup:hover {
+  font-size: 20px;
 }
 
 .btn-wrapper {
-  margin: 20px 0;
+  top: -200px;
+  text-align: center;
+  position: relative;
 }
 
 .btn-wrapper p {
