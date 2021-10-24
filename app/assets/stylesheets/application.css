@@ -46,13 +46,10 @@ header {
 }
 
 .header-logo {
-  /* float: left; */
   font-size: 40px;
-  /* padding: 5px; */
   color: black;
   font-weight: bold;
   font-family: 'Vollkorn', serif;
-  /* position: relative; */
 }
 
 .header-logo a {
@@ -73,24 +70,37 @@ header {
   font-size: 16px;
 }
 
+.guest-login {
+  margin-left: 0px;
+}
+
+.guest-login:hover{
+  transition: all 0.5s;
+  background-color: rgb(221, 220, 212);
+  font-weight: bold;
+}
+
 .about-top:hover{
   transition: all 0.5s;
   background-color: rgb(221, 220, 212);
+  font-weight: bold;
 }
 
 .signup-top:hover {
   transition: all 0.5s;
   background-color: rgb(221, 220, 212);
+  font-weight: bold;
 }
 
 .login-top:hover {
   transition: all 0.5s;
   background-color: rgb(221, 220, 212);
+  font-weight: bold;
 }
 
 .header-right a {
   line-height: 65px;
-  padding: 0 20px;
+  padding: 0 10px;
   color: #333;
   display: block;
   float: left
@@ -106,11 +116,13 @@ header {
 .user-top:hover {
   transition: all 0.5s;
   background-color: rgb(221, 220, 212);
+  font-weight: bold;
 }
 
 .logout-top:hover {
   transition: all 0.5s;
   background-color: rgb(221, 220, 212);
+  font-weight: bold;
 }
 
 /* ページネーション */

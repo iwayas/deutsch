@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post "guest" => "guest_sessions#create"
   post "likes/:post_id/create" => "likes#create"
   post "likes/:post_id/destroy" => "likes#destroy"
   get 'posts/index', to: 'posts#index'
