@@ -280,7 +280,7 @@
 }
 
 .comment-button {
-  width: 110px;
+  width: 140px;
   float: right;
   position: relative;
   background-color: #63b47a;
@@ -291,7 +291,7 @@
   transition: none;
   box-shadow: 0 3px 0 #458d59;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-  text-align: center;
+  padding-left: 30px;
 }
 
 .comment-button a {
@@ -343,4 +343,35 @@ textarea#comment_text.textbox {
   width: 515px;
   height: 100px;
   margin: 10px 0;
+}
+
+.comment-button,
+.comment-content {
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+transform: translateZ(0);
+transition: all 0.3s;
+}
+
+.comment-button::after,
+.comment-button::before {
+content: "";
+position: absolute;
+left: 0.75em;
+top: 0.9em;
+width: 2px;
+height: 0.75em;
+background-color: #fff;
+transition: all 0.3s;
+}
+
+.comment-button::after {
+transform: rotate(90deg);
+}
+
+.comment-check:checked + .comment-button + .comment-content {
+transition: all 1.5s;
+}
+.comment-check:checked + .comment-button::before {
+transform: rotate(90deg) !important;
 }
